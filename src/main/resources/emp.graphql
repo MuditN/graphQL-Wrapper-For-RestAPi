@@ -1,0 +1,16 @@
+schema{
+    query:Query
+}
+
+type Query{
+    allEmployee:[employee]
+    employee(id:String):employee
+}
+
+type employee{
+    id:String
+    employee_name:String
+    employee_salary:String
+    employee_age:Int
+    profile_image:String
+}
